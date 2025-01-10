@@ -18,7 +18,7 @@ jobs:
         with:
           ruby-version: 3.1
 
-      - name: Install and Build
+      - name: Install 和 Build
         run: |
           gem install bundler
           bundle install
@@ -35,6 +35,6 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@3.6.2
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BRANCH: built
+          BRANCH: master
           FOLDER: _site
           CLEAN: true
