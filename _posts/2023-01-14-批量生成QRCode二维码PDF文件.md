@@ -12,6 +12,12 @@ mindmap: false
 mindmap2: false
 ---
 
+![img](https://raw.githubusercontent.com/slience-me/picGo/master/images/logo_slienceme3.jpeg)
+
+本文作者： [slience_me](https://slienceme.cn/)
+
+---
+
 ## 需求：导出产品二维码PDF文件
 
 ### 1. Anchor设置页眉标题 

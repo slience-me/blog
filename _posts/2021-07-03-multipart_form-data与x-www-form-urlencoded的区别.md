@@ -12,6 +12,12 @@ mindmap: false
 mindmap2: false
 ---
 
+![img](https://raw.githubusercontent.com/slience-me/picGo/master/images/logo_slienceme3.jpeg)
+
+本文作者： [slience_me](https://slienceme.cn/)
+
+---
+
 #### multipart/form-data与x-www-form-urlencoded的区别
 - `multipart/form-data`：既可上传文件等二进制数据，也可上传表单键值对；
 - `x-www-form-urlencoded`：只能上传键值对，并且键值对都是间隔分开的。

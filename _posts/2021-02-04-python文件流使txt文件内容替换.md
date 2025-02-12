@@ -12,6 +12,12 @@ mindmap: false
 mindmap2: false
 ---
 
+![img](https://raw.githubusercontent.com/slience-me/picGo/master/images/logo_slienceme3.jpeg)
+
+本文作者： [slience_me](https://slienceme.cn/)
+
+---
+
 # python文件流使txt文件内容替换
 
 ### 方法

@@ -12,6 +12,12 @@ mindmap: false
 mindmap2: false
 ---
 
+![img](https://raw.githubusercontent.com/slience-me/picGo/master/images/logo_slienceme3.jpeg)
+
+本文作者： [slience_me](https://slienceme.cn/)
+
+---
+
 # Junit & 反射 & 注解
 ## 1. Junit单元测试：
 ![Alt Text](/images/posts/20210624211153674.bmp.jpg)

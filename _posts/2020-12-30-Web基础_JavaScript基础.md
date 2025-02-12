@@ -12,8 +12,11 @@ mindmap: false
 mindmap2: false
 ---
 
+![img](https://raw.githubusercontent.com/slience-me/picGo/master/images/logo_slienceme3.jpeg)
 
+本文作者： [slience_me](https://slienceme.cn/)
 
+---
 
 # JavaScript
 ## 1. JavaScript的介绍

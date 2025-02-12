@@ -12,6 +12,12 @@ mindmap: false
 mindmap2: false
 ---
 
+![img](https://raw.githubusercontent.com/slience-me/picGo/master/images/logo_slienceme3.jpeg)
+
+本文作者： [slience_me](https://slienceme.cn/)
+
+---
+
 ### 描述： 在你下载安装包sklearn后，调用以下包时，发现未找到，这是因为load_boston已经在版本1.2被删除
 
 ```py

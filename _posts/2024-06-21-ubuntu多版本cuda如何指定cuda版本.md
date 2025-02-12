@@ -12,7 +12,7 @@ mindmap: false
 mindmap2: false
 ---
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/blog_migrate/e9a9ce64f17b96904b03f129f0317e3d.png)
+![img](https://raw.githubusercontent.com/slience-me/picGo/master/images/logo_slienceme3.jpeg)
 
 本文作者： [slience_me](https://slienceme.cn/)
 

@@ -12,6 +12,11 @@ mindmap: false
 mindmap2: false
 ---
 
+![img](https://raw.githubusercontent.com/slience-me/picGo/master/images/logo_slienceme3.jpeg)
+
+本文作者： [slience_me](https://slienceme.cn/)
+
+---
 
 # Python--Numpy简单了解
 ![Alt Text](/images/posts/6ef52d1585304c0bae1e66240dc77858.png)

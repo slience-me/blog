@@ -12,6 +12,12 @@ mindmap: false
 mindmap2: false
 ---
 
+![img](https://raw.githubusercontent.com/slience-me/picGo/master/images/logo_slienceme3.jpeg)
+
+本文作者： [slience_me](https://slienceme.cn/)
+
+---
+
 # Python--Matplotlib简单了解
 ![Alt Text](/images/posts/6e8e0128dba745a3bfbd7f346851a397.png)
 

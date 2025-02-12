@@ -12,8 +12,13 @@ mindmap: false
 mindmap2: false
 ---
 
-## 人脸表情分类任务
+![img](https://raw.githubusercontent.com/slience-me/picGo/master/images/logo_slienceme3.jpeg)
 
+本文作者： [slience_me](https://slienceme.cn/)
+
+---
+
+## 人脸表情分类任务
 
 - 注意：整个项目来自阿里云天池，下面是开发人员的联系方式，本人仅作为学习记录！！！
 - 该文章原因，学习该项目，完善注释内容，针对新版本的Pytorch进行部分代码调整

@@ -13,6 +13,12 @@ mindmap2: false
 ---
 
 
+![img](https://raw.githubusercontent.com/slience-me/picGo/master/images/logo_slienceme3.jpeg)
+
+本文作者： [slience_me](https://slienceme.cn/)
+
+---
+
 > 数据增强又称为数据增广、数据扩增，它是对训练集进行变换，使训练集更丰富，从而让模型更具泛化能力。
 
 **注意： 下面图片大小通过markdown代码，图片比例有所更改（=400x）**

@@ -12,6 +12,12 @@ mindmap: false
 mindmap2: false
 ---
 
+![img](https://raw.githubusercontent.com/slience-me/picGo/master/images/logo_slienceme3.jpeg)
+
+本文作者： [slience_me](https://slienceme.cn/)
+
+---
+
 ## 一、多模块项目构建
 ### 1. 先建立父级目录demo-parent
 ![Alt Text](/images/posts/c5f35302d3e84ad4b68fef07c387d167.png)

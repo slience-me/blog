@@ -12,6 +12,11 @@ mindmap: false
 mindmap2: false
 ---
 
+![img](https://raw.githubusercontent.com/slience-me/picGo/master/images/logo_slienceme3.jpeg)
+
+本文作者： [slience_me](https://slienceme.cn/)
+
+---
 
 ## 问题发生
 在批量生成二维码的代码部署到linux服务器上后，报错，生成乱码的二维码，中文文字丢失，显示方框框

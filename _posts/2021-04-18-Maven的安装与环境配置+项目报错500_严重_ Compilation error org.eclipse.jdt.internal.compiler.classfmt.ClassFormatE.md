@@ -12,9 +12,13 @@ mindmap: false
 mindmap2: false
 ---
 
+![img](https://raw.githubusercontent.com/slience-me/picGo/master/images/logo_slienceme3.jpeg)
+
+本文作者： [slience_me](https://slienceme.cn/)
+
+---
+
 # Maven的安装与环境配置
-
-
 
 ### 1.下载
 **1.1 百度搜索 Maven ，点红框框里边的即可**

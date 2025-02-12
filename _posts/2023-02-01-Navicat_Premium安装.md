@@ -12,6 +12,12 @@ mindmap: false
 mindmap2: false
 ---
 
+![img](https://raw.githubusercontent.com/slience-me/picGo/master/images/logo_slienceme3.jpeg)
+
+本文作者： [slience_me](https://slienceme.cn/)
+
+---
+
 #### 1. 点击【下一步】
 ![Alt Text](/images/posts/935d4f44511d4596962403a448e59a68.png)
 #### 2.  点击【我同意】，然后点击【下一步】

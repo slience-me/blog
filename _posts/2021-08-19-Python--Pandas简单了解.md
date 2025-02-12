@@ -12,6 +12,12 @@ mindmap: false
 mindmap2: false
 ---
 
+![img](https://raw.githubusercontent.com/slience-me/picGo/master/images/logo_slienceme3.jpeg)
+
+本文作者： [slience_me](https://slienceme.cn/)
+
+---
+
 ![Alt Text](/images/posts/0d221d3c0a114fffa36c48e306e933e5.png)
 # Python--Pandas简单了解
 

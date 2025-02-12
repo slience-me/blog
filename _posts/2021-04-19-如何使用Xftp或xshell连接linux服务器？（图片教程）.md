@@ -12,6 +12,12 @@ mindmap: false
 mindmap2: false
 ---
 
+![img](https://raw.githubusercontent.com/slience-me/picGo/master/images/logo_slienceme3.jpeg)
+
+本文作者： [slience_me](https://slienceme.cn/)
+
+---
+
 ## xftp（sftp协议）
 ![Alt Text](/images/posts/2021041919215284.png)
 ![Alt Text](/images/posts/20210419192341329.png)

@@ -12,6 +12,13 @@ mindmap: false
 mindmap2: false
 ---
 
+![img](https://raw.githubusercontent.com/slience-me/picGo/master/images/logo_slienceme3.jpeg)
+
+本文作者： [slience_me](https://slienceme.cn/)
+
+---
+
+
 ## 报错来源
 在安装dlib包的时候，报错以下内容
 - Failed to build dlib， ERROR: Could not build wheels for dlib, which is required to install pyproject.toml-based projects

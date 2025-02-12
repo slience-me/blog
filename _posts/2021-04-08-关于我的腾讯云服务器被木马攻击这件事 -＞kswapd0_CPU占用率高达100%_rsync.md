@@ -12,6 +12,11 @@ mindmap: false
 mindmap2: false
 ---
 
+![img](https://raw.githubusercontent.com/slience-me/picGo/master/images/logo_slienceme3.jpeg)
+
+本文作者： [slience_me](https://slienceme.cn/)
+
+---
 
 今天打开我的服务器后台，突然发现我的服务器内存，CPU统统报红，大概这个样子。(PS:这是我修复后描绘的图)
 ![Alt Text](/images/posts/20210408195315680.png)
