@@ -13,7 +13,7 @@ mindmap2: false
 ---
 
 
-![img](https://raw.githubusercontent.com/slience-me/picGo/master/images/logo_slienceme3.jpeg)
+![img](/images/posts/logo_slienceme3.png)
 
 本文作者： [slience_me](https://slienceme.cn/)
 
