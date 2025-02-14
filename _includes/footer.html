@@ -32,6 +32,7 @@
             </ul>-->
             <br/>
           {% include visit-stat.html %}
+          {% include visit-stat-new.html %}
 
         </div>
     </footer>
@@ -158,7 +159,7 @@ $(document).ready(function(){
     </style>
     <script>
         function fullScreen(nodeId) {
-            var element= document.getElementById(nodeId);  
+            var element= document.getElementById(nodeId);
             if (window.ActiveXObject) {
                 var WsShell = new ActiveXObject('WScript.Shell');
                 WsShell.SendKeys('{F11}');
@@ -178,7 +179,7 @@ $(document).ready(function(){
         }
 
         function fullExit() {
-            var element= document.getElementById("ddd");  
+            var element= document.getElementById("ddd");
             if (window.ActiveXObject) {
                 var WsShell = new ActiveXObject('WScript.Shell');
                 WsShell.SendKeys('{F11}');
@@ -205,7 +206,7 @@ $(document).ready(function(){
                 parent.insertBefore(newElement, targetElement.nextSibling);
             }
         }
-       
+
         $(document).ready(function(){
             $('.language-mindmap').each(function(index, element) {
                 window.markmap = {

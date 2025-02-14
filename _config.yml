@@ -59,10 +59,10 @@ highlight_theme: github
 # ---------------- #
 author: slience_me
 organization:
-organization_url: 
+organization_url:
 github_username: slience-me
 location: Tianjin, China
-email: slienceme520@gmail.com
+email: slienceme.cn@gmail.com
 
 # ---------------- #
 #    Navigation    #
@@ -146,7 +146,7 @@ comments_provider: giscus
 # !!!Important!!! Please modify infos below to yours
 # disqus 配置参考：https://disqus.com
 disqus:
-    username: 
+    username:
 # gitment 配置参考：https://imsun.net/posts/gitment-introduction/
 gitment:
     owner: slience-me
