@@ -2803,10 +2803,13 @@ GET my_index/_analyze
 
 ### 4.1 9300:TCP
 
-
+- spring-data-elasticsearch:transport-api.jar;
+  - springboot版本不同，ransport-api.jar不同，不能适配es版本
+  - 7.x已经不建议使用，8以后就要废弃
 
 ### 4.2 9200:HTTP
 
-
-
-。。。临时提交
+- jestClient: 非官方，更新慢；
+- RestTemplate：模拟HTTP请求，ES很多操作需要自己封装，麻烦；
+- HttpClient：同上；
+- Elasticsearch-Rest-Client：官方RestClient，封装了ES操作，API层次分明，上手简单； 最终选择Elasticsearch-Rest-Client（elasticsearch-rest-high-level-client）； https://www.elastic.co/guide/en/elasticsearch/client/java-rest/current/java-rest-high.html
