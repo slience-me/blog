@@ -39,7 +39,7 @@ GET /_cat/indices: 查看所有索引 相当于 show databases;
 
 
 ```
-PUT customer/external/1  (这里不应该有空行, 由于md代码块http request格式问题,我加了空行)
+PUT customer/external/1  (这里不应该有空行, 由于md代码块json格式问题,我加了空行)
 {
    "name" : "slience_me"  // 另外不要在这里面写注释(如果有需要删除)
 }
@@ -52,7 +52,7 @@ PUT customer/external/1  (这里不应该有空行, 由于md代码块http reques
 
 **PUT带ID的请求**
 
-```http request
+```text
 # PUT /索引名称/类型名称/文档id
 # PUT带ID的请求, 第一次created第二次updated. 
 # _version会递增
@@ -83,7 +83,7 @@ PUT customer/external/1
 
 **POST请求**
 
-```http request
+```text
 # POST /索引名称/类型名称
 # 每次产生不同的_id, 每次都是新增操作
 
@@ -118,7 +118,7 @@ PUT customer/external/
 
 ### 2.3 查看文档
 
-```http request
+```text
 # GET /索引名称/类型名称/文档id
 GET customer/external/1
 
@@ -143,7 +143,7 @@ GET customer/external/1
 
 **请求1**
 
-```http request
+```text
 # 先进行读取
 GET customer/external/1
 
@@ -162,7 +162,7 @@ GET customer/external/1
 # 得到 _seq_no=1&_primary_term=1
 ```
 
-```http request
+```text
 # 准备修改请求
 PUT customer/external/1?if_seq_no=1&if_primary_term=1
 
@@ -189,7 +189,7 @@ PUT customer/external/1?if_seq_no=1&if_primary_term=1
 
 **请求2**
 
-```http request
+```text
 # 先进行读取
 GET /customer/external/1
 
@@ -208,7 +208,7 @@ GET /customer/external/1
 # 得到 _seq_no=1&_primary_term=1
 ```
 
-```http request
+```text
 # 准备修改请求
 PUT customer/external/1?if_seq_no=1&if_primary_term=1
 
@@ -247,7 +247,7 @@ PUT customer/external/1?if_seq_no=1&if_primary_term=1
 
 **POST更新文档，带有_update**
 
-```http request
+```text
 # 首次请求
 POST customer/external/1/_update
 
@@ -276,7 +276,7 @@ POST customer/external/1/_update
 
 如果再次执行更新，则不执行任何操作，序列号也不发生变化
 
-```http request
+```text
 # 再次请求
 POST customer/external/1/_update
 
@@ -311,7 +311,7 @@ POST customer/external/1/_update
 
 如果再次执行更新，则再次执行更新操作，序列号也发生变化
 
-```http request
+```text
 # 首次再次请求
 POST customer/external/1/
 
@@ -356,7 +356,7 @@ POST customer/external/1/
 
 #### （3）更新同时增加属性
 
-```http request
+```text
 PUT customer/external/1/
 
 {
@@ -381,7 +381,7 @@ PUT customer/external/1/
 }
 ```
 
-```http request
+```text
 # 首次再次请求
 POST customer/external/1/
 
@@ -417,7 +417,7 @@ POST customer/external/1/
 
 实例：删除id=1的数据，删除后继续查询
 
-```http request
+```text
 DELETE customer/external/1/
 
 // 结果
@@ -446,7 +446,7 @@ DELETE customer/external/1/
 
 实例：删除整个costomer索引数据
 
-```http request
+```text
 DELETE customer/
 
 // 结果
@@ -482,7 +482,7 @@ GET customer/external/1/
 
 语法格式
 
-```http request
+```text
 POST **/_bulk
 
 {action:{metadata}}
@@ -494,7 +494,7 @@ POST **/_bulk
 
 案例：
 
-```http request
+```text
 POST /customer/external/_bulk
 
 {"index":{"_id": "1"}}
@@ -547,7 +547,7 @@ POST /customer/external/_bulk
 
 复杂的案例：
 
-```http request
+```text
 POST /_bulk
 
 {"delete":{"_index":"website","_type":"blog","_id":"123"}}
@@ -640,7 +640,7 @@ POST /_bulk
 
 准备了一份顾客银行账户信息的虚构的JSON文档样本。每个文档都有下列的schema（模式）。
 
-```json
+```text
 {
 	"account_number": 1,
 	"balance": 39225,
@@ -658,7 +658,7 @@ POST /_bulk
 
 [数据下载链接](https://github.com/elastic/elasticsearch/blob/7.5/docs/src/test/resources/accounts.json)
 
-```http request
+```text
 POST /bank/account/_bulk
 
 ...[JSON data]...
@@ -705,7 +705,7 @@ _score: 相关性得分 score和max_score相关性得分和最高得分(全文�
 
 ##### 请求方式：uri +检索参数
 
-```http request
+```text
 GET bank/_search?q=*&sort=account_number:asc
 
 {
@@ -777,7 +777,7 @@ GET bank/_search?q=*&sort=account_number:asc
 
 ##### 请求方式：uri+请求体
 
-```http request
+```text
 GET /bank/_search
 
 # 参数解释样例
@@ -879,7 +879,7 @@ Elasticsearch提供了一个可以执行查询的Json风格的DSL。这个被称
 
 一个查询语句的典型结构
 
-```http request
+```text
 GET bank/_search
 
 QUERY_NAME:{
@@ -890,7 +890,7 @@ QUERY_NAME:{
 
 如果针对于某个字段，那么它的结构如下：
 
-```http request
+```text
 GET bank/_search
 
 {
@@ -903,7 +903,7 @@ GET bank/_search
 }
 ```
 
-```http request
+```text
 GET bank/_search
 
 {
@@ -933,7 +933,7 @@ query定义如何查询；
 
 _source: 指定返回结果包含的字段
 
-```http request
+```text
 GET bank/_search
 
 {
@@ -960,7 +960,7 @@ GET bank/_search
 
 基本类型（非字符串），精确控制
 
-```http request
+```text
 GET bank/_search
 
 {
@@ -1016,7 +1016,7 @@ GET bank/_search
 
 全文检索，最终会按照评分进行排序，会对检索条件进行分词匹配。
 
-```http request
+```text
 GET bank/_search
 
 {
@@ -1092,7 +1092,7 @@ GET bank/_search
 
 将需要匹配的值当成一整个单词（不分词）进行检索
 
-```http request
+```text
 GET bank/_search
 
 {
@@ -1148,7 +1148,7 @@ GET bank/_search
 
 例如：state或者address中包含mill，并且在查询过程中，会对于查询条件进行分词。
 
-```http request
+```text
 GET bank/_search
 
 {
@@ -1245,7 +1245,7 @@ GET bank/_search
 
 must样例
 
-```http request
+```text
 GET bank/_search
 
 {
@@ -1303,7 +1303,7 @@ GET bank/_search
 
 must not样例
 
-```http request
+```text
 GET bank/_search
 
 {
@@ -1375,7 +1375,7 @@ GET bank/_search
 
 should样例
 
-```http request
+```text
 GET bank/_search
 
 {
@@ -1476,7 +1476,7 @@ GET bank/_search
 
 并非所有查询都需要产生分数，特别是哪些仅用于filtering过滤的文档。为了不计算分数，elasticsearch会自动检查场景并且优化查询的执行。
 
-```http request
+```text
 GET bank/_search
 
 {
@@ -1567,7 +1567,7 @@ GET bank/_search
 
 使用term匹配查询  精确查询
 
-```http request
+```text
 GET bank/_search
 
 {
@@ -1648,7 +1648,7 @@ This can make finding exact matches for text field values difficult.
 
 使用term匹配查询 字符串查询
 
-```http request
+```text
 GET bank/_search
 
 {
@@ -1682,7 +1682,7 @@ GET bank/_search
 
 match匹配
 
-```http request
+```text
 GET bank/_search
 
 {
@@ -1695,7 +1695,7 @@ GET bank/_search
 
 短语匹配
 
-```http request
+```text
 GET bank/_search
 
 {
@@ -1709,7 +1709,7 @@ GET bank/_search
 
 使用keyword 进行精确匹配
 
-```http request
+```text
 GET bank/_search
 
 {
@@ -1765,7 +1765,7 @@ aggs：执行聚合。聚合语法如下：
 
 搜索address中包含mill的所有人的年龄分布以及平均年龄，但不显示这些人的详情
 
-```http request
+```text
 GET bank/_search
 
 {
@@ -1844,7 +1844,7 @@ GET bank/_search
 
 复杂： 按照年龄聚合，并且求这些年龄段的这些人的平均薪资
 
-```http request
+```text
 GET bank/_search
 
 {
@@ -1915,7 +1915,7 @@ GET bank/_search
 
 查出所有年龄分布，并且这些年龄段中M的平均薪资和F的平均薪资以及这个年龄段的总体平均薪资
 
-```http request
+```text
 GET bank/_search
 
 {
@@ -2079,7 +2079,7 @@ Mapping(映射) Maping是用来定义一个文档（document），以及它所�
 - 自定义映射规则来执行动态添加属性；
 - 查看mapping信息 GET bank/_mapping
 
-```http request
+```text
 GET bank/_mapping
 
 // 返回
@@ -2206,7 +2206,7 @@ ElasticSearch7-去掉type概念
 
 创建索引并指定映射
 
-```http request
+```text
 PUT /my_index
 
 {
@@ -2235,7 +2235,7 @@ PUT /my_index
 
 ##### 查看映射
 
-```http request
+```text
 GET /my_index
 
 // 结果
@@ -2275,7 +2275,7 @@ GET /my_index
 
 这里的 "index": false，表明新增的字段不能被检索，只是一个冗余字段。
 
-```http request
+```text
 PUT /my_index/_mapping
 
 {
@@ -2300,7 +2300,7 @@ PUT /my_index/_mapping
 ##### 数据迁移
 
 先创建new_twitter的正确映射。然后使用如下方式进行数据迁移。
-```http request
+```text
 POST _reindex [固定写法]
 
 {
@@ -2315,7 +2315,7 @@ POST _reindex [固定写法]
 
 将旧索引的type下的数据进行迁移(旧版本)
 
-```http request
+```text
 POST _reindex [固定写法]
 
 {
@@ -2338,7 +2338,7 @@ POST _reindex [固定写法]
 - keyword： 不能被分词，只能被精确匹配
 - text： 可以被分词，可以被全文搜索
 
-```http request
+```text
 PUT /newbank
 
 {
@@ -2390,7 +2390,7 @@ PUT /newbank
 
 然后重设索引
 
-```http request
+```text
 POST _reindex
 
 {
@@ -2428,7 +2428,7 @@ POST _reindex
 查询
 通过这样的操作, 可以不用type, 老的数据也可以迁移出来
 
-```http request
+```text
 GET /newbank/_search
 
 // 结果
@@ -2504,7 +2504,7 @@ elasticsearch提供了很多内置的分词器，可以用来构建custom analyz
 
 > 关于分词器： https://www.elastic.co/guide/en/elasticsearch/reference/7.5/analysis.html
 
-```http request
+```text
 POST _analyze
 
 {
@@ -2608,7 +2608,7 @@ POST _analyze
 
 ##### 查看elasticsearch版本号
 
-```json
+```text
 {
   "name" : "6bf8d224ae02",
   "cluster_name" : "elasticsearch",
@@ -2658,7 +2658,7 @@ elasticsearch-plugin list # 查看插件列表
 
 使用默认
 
-```http request
+```text
 GET my_index/_analyze
 
 {
@@ -2709,7 +2709,7 @@ GET my_index/_analyze
 
 使用ik_smart分词器, 智能分词
 
-```http request
+```text
 GET my_index/_analyze
 
 {
@@ -2747,7 +2747,7 @@ GET my_index/_analyze
 
 ik_max_word分词器, 获取最大单词组合
 
-```http request
+```text
 GET my_index/_analyze
 
 {
@@ -2833,7 +2833,7 @@ slience_me
 
 测试分词效果:
 
-```http request
+```text
 GET my_index/_analyze
 
 {
