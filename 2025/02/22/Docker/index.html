@@ -1,0 +1,279 @@
+<!DOCTYPE html> <html lang="zh-cmn-Hans" prefix="og: http://ogp.me/ns#" class="han-init"> <head> <meta charset="utf-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> <title>服务器｜【指令集】Docker &mdash; Slience_me的博客</title> <link rel="stylesheet" href="https://blog.slienceme.cn/assets/vendor/primer-css/css/primer.css"> <link rel="stylesheet" href="https://blog.slienceme.cn/assets/css/components/collection.css"> <link rel="stylesheet" href="https://blog.slienceme.cn/assets/css/components/repo-card.css"> <link rel="stylesheet" href="https://blog.slienceme.cn/assets/css/sections/repo-list.css"> <link rel="stylesheet" href="https://blog.slienceme.cn/assets/css/components/boxed-group.css"> <link rel="stylesheet" href="https://blog.slienceme.cn/assets/css/globals/common.css"> <link rel="stylesheet" href="https://blog.slienceme.cn/assets/css/globals/responsive.css"> <link rel="stylesheet" href="https://blog.slienceme.cn/assets/css/posts/index.css"> <link rel="stylesheet" href="https://blog.slienceme.cn/assets/vendor/octicons/octicons/octicons.css"> <link rel="stylesheet" href="https://mazhuang.org/rouge-themes/dist/github.css"> <link rel="stylesheet" href="https://blog.slienceme.cn/assets/vendor/share.js/dist/css/share.min.css"> <link rel="canonical" href="https://blog.slienceme.cn/2025/02/22/Docker/"> <link rel="alternate" type="application/atom+xml" title="Slience_me的博客" href="https://blog.slienceme.cn/feed.xml"> <link rel="shortcut icon" href="https://blog.slienceme.cn/favicon.ico"> <meta property="og:title" content="服务器｜【指令集】Docker"> <meta name="keywords" content="服务器, Linux, Docker"> <meta name="og:keywords" content="服务器, Linux, Docker"> <meta name="description" content=""> <meta name="og:description" content=""> <meta property="og:url" content="https://blog.slienceme.cn/2025/02/22/Docker/"> <meta property="og:site_name" content="Slience_me的博客"> <meta property="og:type" content="article"> <meta property="og:locale" content="zh_CN" /> <meta property="article:published_time" content="2025-02-22"> <meta name="google-site-verification" content="2feHjT1GNs1Yi2JQfOtdYx7d048naG_-cMwZaDAopIA" /> <script src="https://blog.slienceme.cn/assets/vendor/jquery/dist/jquery.min.js"></script> <script src="https://blog.slienceme.cn/assets/js/main.js"></script> </head> <body class="" data-mz=""> <header class="site-header"> <div class="container"> <h1><a href="https://blog.slienceme.cn/" title="Slience_me的博客"><span class="octicon octicon-mark-github"></span> Slience_me的博客</a></h1> <button class="collapsed mobile-visible" type="button" onclick="toggleMenu();"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <nav class="site-header-nav" role="navigation"> <a href="https://blog.slienceme.cn/" class="site-header-nav-item" target="" title="首页">首页</a> <a href="https://blog.slienceme.cn/categories/" class="site-header-nav-item" target="" title="分类">分类</a> <a href="https://blog.slienceme.cn/archives/" class="mobile-hidden site-header-nav-item" target="" title="归档">归档</a> <a href="https://blog.slienceme.cn/open-source/" class="mobile-hidden site-header-nav-item" target="" title="开源">开源</a> <a href="https://blog.slienceme.cn/fragments/" class="site-header-nav-item" target="" title="片段">片段</a> <a href="https://blog.slienceme.cn/wiki/" class="site-header-nav-item" target="" title="维基">维基</a> <a href="https://blog.slienceme.cn/links/" class="mobile-hidden site-header-nav-item" target="" title="链接">链接</a> <a href="https://blog.slienceme.cn/about/" class="site-header-nav-item" target="" title="关于">关于</a> <a class="mobile-hidden" href="https://blog.slienceme.cn/feed.xml"><span class="octicon octicon-rss" style="color:orange;"></span></a> </nav> </div> </header> <section class="collection-head small geopattern" data-pattern-id="服务器｜【指令集】Docker"> <div class="container"> <div class="columns"> <div class="column three-fourths"> <div class="collection-title"> <h1 class="collection-header">服务器｜【指令集】Docker</h1> <div class="collection-info"> <span class="meta-info"> <span class="octicon octicon-calendar"></span> 2025/02/22 </span> <span class="meta-info"> <span class="octicon octicon-file-directory"></span> <a href="https://blog.slienceme.cn/categories/#服务器" title="服务器">服务器</a> </span> <span class="meta-info"> <span class="octicon octicon-file-directory"></span> <a href="https://blog.slienceme.cn/categories/#Linux" title="Linux">Linux</a> </span> <span class="meta-info"> <span class="octicon octicon-file-directory"></span> <a href="https://blog.slienceme.cn/categories/#指令汇总" title="指令汇总">指令汇总</a> </span> <span class="meta-info"> <span class="octicon octicon-clock"></span> 共 7159 字，约 21 分钟 </span> </div> </div> </div> <div class="column one-fourth mobile-hidden"> <div class="collection-title"> </div> </div> </div> </div> </section> <section class="container content"> <div class="columns"> <div class="column three-fourths" > <article class="article-content markdown-body"> <p><img src="https://blog.slienceme.cn/images/posts/logo_slienceme3.png" alt="img" /></p> <p>本文作者： <a href="https://slienceme.cn/">slience_me</a></p> <hr /> <h1 id="docker">Docker</h1> <p><a href="https://hub.docker.com/">docker镜像地址</a></p> <p><a href="https://docs.docker.com/desktop/setup/install/">docker官网</a></p> <p>使用阿里云进行镜像加速</p> <h2 id="1-docker安装">1. docker安装</h2> <h3 id="centos">【centos】</h3> <blockquote> <p>PS: centos7官网镜像源已经不能用了,需要使用阿里云镜像源,使用下面方案解决</p> <p><a href="https://blog.csdn.net/qq_67177419/article/details/144096396">发现系统没有wget: 参考解决方案</a></p> </blockquote> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 【centos7】</span>
+<span class="c"># 卸载旧版本</span>
+<span class="nb">sudo </span>yum remove docker <span class="se">\</span>
+                docker-client <span class="se">\</span>
+                docker-client-latest <span class="se">\</span>
+                docker-common <span class="se">\</span>
+                docker-latest <span class="se">\</span>
+                docker-latest-logrotate <span class="se">\</span>
+                docker-logrotate <span class="se">\</span>
+                docker-engine
+                
+<span class="c"># 安装依赖</span>
+<span class="nb">sudo </span>yum <span class="nb">install</span> <span class="nt">-y</span> yum-utils <span class="se">\</span>
+  device-mapper-persistent-data <span class="se">\</span>
+  lvm2
+  
+<span class="c"># 设置镜像源</span>
+<span class="nb">sudo </span>yum-config-manager <span class="nt">--add-repo</span> https://download.docker.com/linux/centos/docker-ce.repo
+        
+<span class="c"># 安装docker</span>
+<span class="nb">sudo </span>yum <span class="nb">install </span>docker-ce docker-ce-cli containerd.io
+
+<span class="nb">sudo </span>systemctl start docker <span class="c"># 启动docker</span>
+<span class="nb">sudo </span>systemctl <span class="nb">enable </span>docker <span class="c"># 设置开机自启</span>
+
+<span class="c"># 测试</span>
+<span class="nb">sudo </span>docker run hello-world
+<span class="c"># 安装mysql</span>
+<span class="nb">sudo </span>docker pull mysql:5.7
+</code></pre></div></div> <h3 id="ubuntu">【ubuntu】</h3> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#----------------------------------------------------------------</span>
+<span class="c"># 【ubuntu】</span>
+<span class="c"># 卸载旧版本 Docker</span>
+<span class="nb">sudo </span>apt remove docker <span class="se">\</span>
+                    docker-engine <span class="se">\</span>
+                    docker.io <span class="se">\</span>
+                    containerd <span class="se">\</span>
+                    runc
+                    
+<span class="c"># 安装依赖，安装必要的软件包，以允许apt通过HTTPS使用仓库：</span>
+<span class="nb">sudo </span>apt update
+<span class="nb">sudo </span>apt <span class="nb">install </span>apt-transport-https ca-certificates curl gnupg-agent software-properties-common
+
+<span class="c"># 添加Docker的官方GPG密钥  添加Docker的稳定仓库</span>
+curl <span class="nt">-fsSL</span> https://download.docker.com/linux/ubuntu/gpg | <span class="nb">sudo </span>apt-key add -
+
+<span class="c"># 使用以下命令设置存储库</span>
+<span class="nb">sudo </span>add-apt-repository <span class="s2">"deb [arch=amd64] https://download.docker.com/linux/ubuntu </span><span class="si">$(</span>lsb_release <span class="nt">-cs</span><span class="si">)</span><span class="s2"> stable"</span>
+
+<span class="c"># 安装 Docker</span>
+<span class="nb">sudo </span>apt update
+<span class="nb">sudo </span>apt <span class="nb">install </span>docker-ce docker-ce-cli containerd.io
+
+<span class="c"># 如果想要指定版本</span>
+apt list <span class="nt">-a</span> docker-ce
+<span class="nb">sudo </span>apt <span class="nb">install </span>docker-ce<span class="o">=</span>&lt;VERSION&gt; docker-ce-cli<span class="o">=</span>&lt;VERSION&gt; containerd.io
+
+<span class="c"># 启动 Docker 并设置开机自启</span>
+<span class="nb">sudo </span>systemctl start docker
+<span class="nb">sudo </span>systemctl <span class="nb">enable </span>docker
+
+<span class="c"># 测试 Docker 安装</span>
+<span class="nb">sudo </span>docker run hello-world
+
+<span class="c"># 安装 MySQL</span>
+<span class="nb">sudo </span>docker pull mysql:5.7
+</code></pre></div></div> <h2 id="2-docker常用指令">2. docker常用指令</h2> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker version <span class="c"># 查看docker版本</span>
+docker <span class="nt">-v</span>
+<span class="nb">sudo </span>docker info <span class="c">#  查看docker信息</span>
+<span class="nb">sudo </span>docker ps <span class="nt">-a</span> <span class="c"># 查看docker容器</span>
+<span class="nb">sudo </span>docker images <span class="c"># 查看docker镜像</span>
+<span class="nb">sudo </span>docker logs container_id <span class="c"># 查看docker容器日志</span>
+<span class="nb">sudo </span>docker logs <span class="nb">tail </span>100 container_id
+<span class="nb">sudo </span>docker logs <span class="nt">-fnt</span> container_id
+<span class="nb">sudo </span>docker port container_id <span class="c"># 查看docker容器端口映射</span>
+<span class="nb">sudo </span>docker top container_id <span class="c"># 查看docker容器进程</span>
+<span class="nb">sudo </span>docker inspect container_id <span class="c"># 查看docker容器详细信息</span>
+<span class="nb">sudo </span>docker start container_id <span class="c"># 启动docker容器</span>
+<span class="nb">sudo </span>docker stop container_id <span class="c"># 停止docker容器</span>
+<span class="nb">sudo </span>docker restart container_id <span class="c"># 重启docker容器</span>
+<span class="nb">sudo </span>docker <span class="nb">rm </span>container_id <span class="c"># 删除docker容器</span>
+<span class="nb">sudo </span>docker rmi image_id <span class="c"># 删除docker镜像</span>
+</code></pre></div></div> <h2 id="3-镜像加速">3. 镜像加速</h2> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo mkdir</span> <span class="nt">-p</span> /etc/docker
+<span class="nb">sudo tee</span> /etc/docker/daemon.json <span class="o">&lt;&lt;-</span><span class="sh">'</span><span class="no">EOF</span><span class="sh">'
+{
+    "registry-mirrors": [
+        "https://do.nark.eu.org",
+        "https://dc.j8.work",
+        "https://docker.m.daocloud.io",
+        "https://dockerproxy.com",
+        "https://docker.mirrors.ustc.edu.cn",
+        "https://docker.nju.edu.cn",
+        "https://mirrors.tuna.tsinghua.edu.cn",
+        "https://ustc-edu-cn.mirror.aliyuncs.com",
+        "https://ccr.ccs.tencentyun.com",
+        "https://docker.m.daocloud.io",
+        "https://docker.awsl9527.cn"
+    ]
+}
+</span><span class="no">EOF
+</span><span class="nb">sudo </span>systemctl daemon-reload
+<span class="nb">sudo </span>systemctl restart docker
+</code></pre></div></div> <h2 id="4-docker安装mysql">4. docker安装mysql</h2> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 1. 拉取镜像</span>
+docker pull mysql:5.7
+
+<span class="c"># 2. 创建容器</span>
+<span class="c"># 创建并准备必要的宿主机目录： 确保宿主机上的目录</span>
+<span class="nb">sudo mkdir</span> <span class="nt">-p</span> /home/slienceme/docker/mysql/log /home/slienceme/docker/mysql/data /home/slienceme/docker/mysql/conf
+
+<span class="c"># 注意这个路径一定要对应上</span>
+<span class="nb">sudo </span>docker run <span class="nt">-p</span> 3306:3306 <span class="nt">--name</span> mysql <span class="se">\</span>
+<span class="nt">-v</span> /home/slienceme/docker/mysql/log:/var/log/mysql <span class="se">\</span>
+<span class="nt">-v</span> /home/slienceme/docker/mysql/data:/var/lib/mysql <span class="se">\</span>
+<span class="nt">-v</span> /home/slienceme/docker/mysql/conf:/etc/mysql/conf.d <span class="se">\</span>
+<span class="nt">-e</span> <span class="nv">MYSQL_ROOT_PASSWORD</span><span class="o">=</span>123456 <span class="se">\</span>
+<span class="nt">-d</span> mysql:5.7
+
+<span class="c"># -p 3306:3306 将主机的 3306 端口映射到容器的 3306 端口</span>
+<span class="c"># --name mysql 设置容器名称为 mysql</span>
+<span class="c"># -v /mydata/mysql/log:/var/log/mysql 将日志目录挂载到主机</span>
+<span class="c"># -v /mydata/mysql/data:/var/lib/mysql 将数据目录挂载到主机</span>
+<span class="c"># -v /mydata/mysql/conf:/etc/mysql 将配置目录挂载到主机</span>
+<span class="c"># -e MYSQL_ROOT_PASSWORD=123456 设置 root 用户的密码为 root</span>
+<span class="c"># -d mysql:5.7 后台运行容器，并返回容器 ID</span>
+
+<span class="c"># 3. 进入容器</span>
+docker <span class="nb">exec</span> <span class="nt">-it</span> mysql /bin/bash
+<span class="c"># 4. 登录mysql</span>
+mysql <span class="nt">-uroot</span> <span class="nt">-p123456</span>
+<span class="c"># 5. 创建数据库</span>
+create database <span class="nb">test</span>
+<span class="c"># 6. 创建用户</span>
+create user <span class="s1">'test'</span>@<span class="s1">'%'</span> identified by <span class="s1">'123456'</span>
+<span class="c"># 7. 授权用户</span>
+grant all privileges on test.<span class="k">*</span> to <span class="s1">'test'</span>@<span class="s1">'%'</span>
+<span class="c"># 8. 刷新权限</span>
+flush privileges
+
+<span class="c"># 修改配置文件</span>
+vi /home/slienceme/docker/mysql/conf/my.cnf
+<span class="c"># ============================开始=============================</span>
+<span class="o">[</span>client]
+default-character-set<span class="o">=</span>utf8
+
+<span class="o">[</span>mysql]
+default-character-set<span class="o">=</span>utf8
+
+<span class="o">[</span>mysqld]
+<span class="nv">init_connect</span><span class="o">=</span><span class="s1">'SET collation_connection = utf8_unicode_ci'</span>
+<span class="nv">init_connect</span><span class="o">=</span><span class="s1">'SET NAMES utf8'</span>
+character-set-server<span class="o">=</span>utf8
+collation-server<span class="o">=</span>utf8_unicode_ci
+skip-character-set-client-handshake
+skip-name-resolve
+<span class="c"># ============================结束============================</span>
+
+<span class="c"># 设置自动启动</span>
+docker update mysql <span class="nt">--restart</span><span class="o">=</span>always 
+</code></pre></div></div> <h2 id="5-docker安装redis">5. docker安装redis</h2> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 1. 拉取镜像</span>
+docker pull redis
+<span class="nb">mkdir</span> <span class="nt">-p</span> /home/slienceme/docker/redis/conf
+<span class="nb">touch</span> /home/slienceme/docker/redis/conf/redis.conf
+
+<span class="c"># 2. 创建容器</span>
+docker run <span class="nt">-p</span> 6379:6379 <span class="nt">--name</span> redis <span class="nt">-v</span> /home/slienceme/docker/redis/data:/data <span class="se">\</span>
+    <span class="nt">-v</span> /home/slienceme/docker/redis/conf/redis.conf:/etc/redis/redis.conf <span class="se">\</span>
+    <span class="nt">-d</span> redis redis-server /etc/redis/redis.conf
+    
+<span class="c"># 3. 进入容器</span>
+docker <span class="nb">exec</span> <span class="nt">-it</span> redis redis-cli
+
+<span class="c"># 设置自动启动</span>
+docker update redis <span class="nt">--restart</span><span class="o">=</span>always
+</code></pre></div></div> <h2 id="6-docker安装elasticsearchkibana">6. docker安装ElasticSearch&amp;kibana</h2> <p><strong>安装ElasticSearch</strong></p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 1. 拉取镜像</span>
+docker pull elasticsearch:7.4.2   <span class="c"># 存储和检索数据</span>
+
+<span class="c"># 2. 创建容器</span>
+<span class="c"># 创建并准备必要的宿主机目录： 确保宿主机上的目录</span>
+<span class="nb">mkdir</span> <span class="nt">-p</span> /home/slienceme/docker/elasticsearch/config
+<span class="nb">mkdir</span> <span class="nt">-p</span> /home/slienceme/docker/elasticsearch/data
+<span class="nb">echo</span> <span class="s2">"http.host: 0.0.0.0"</span> <span class="o">&gt;&gt;</span> /home/slienceme/docker/elasticsearch/config/elasticsearch.yml
+
+<span class="c"># 9200: 发送HTTP请求 RESTAPI 向elasticsearch的请求端口</span>
+<span class="c"># 9300：在分布式集群下 节点间的通讯端口</span>
+docker run <span class="nt">-p</span> 9200:9200 <span class="nt">-p</span> 9300:9300 <span class="nt">--name</span> elasticsearch <span class="se">\</span>
+	<span class="nt">-e</span> <span class="s2">"discovery.type=single-node"</span> <span class="se">\</span>
+	<span class="nt">-e</span> <span class="nv">ES_JAVA_OPTS</span><span class="o">=</span><span class="s2">"-Xms1024m -Xmx2048m"</span> <span class="se">\</span>
+	<span class="nt">-v</span> /home/slienceme/docker/elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml <span class="se">\</span>
+    <span class="nt">-v</span> /home/slienceme/docker/elasticsearch/data:/usr/share/elasticsearch/data <span class="se">\</span>
+    <span class="nt">-v</span> /home/slienceme/docker/elasticsearch/plugins:/usr/share/elasticsearch/plugins <span class="se">\</span>
+    <span class="nt">-d</span> elasticsearch:7.4.2
+
+<span class="c"># 3. 设置开机启动</span>
+docker update elasticsearch <span class="nt">--restart</span><span class="o">=</span>always
+
+<span class="c"># 4. 测试</span>
+<span class="c"># 查看elasticsearch版本信息： 访问 http://虚拟机IP:9200/</span>
+</code></pre></div></div> <p><strong>安装kibana</strong></p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 1. 拉取镜像</span>
+docker pull kibana:7.4.2          <span class="c"># 可视化检索数据</span>
+
+<span class="c"># 2. 创建容器  虚拟机IP:这个IP需要是docker内部IP </span>
+<span class="c"># 通过 下面指令查询</span>
+docker ps
+docker inspect 容器id
+<span class="c">#"Networks": {</span>
+<span class="c">#     "bridge": {</span>
+<span class="c">#         ...</span>
+<span class="c">#         "IPAddress": "`172.17.0.4`",</span>
+<span class="c">#         ...</span>
+<span class="c">#     }</span>
+
+docker run <span class="nt">-p</span> 5601:5601 <span class="nt">--name</span> kibana 
+	<span class="nt">-e</span> <span class="nv">ELASTICSEARCH_HOSTS</span><span class="o">=</span>http://容器内部IP:9200 <span class="se">\</span>
+	<span class="nt">-d</span> kibana:7.4.2
+
+<span class="c"># 3. 设置开机启动</span>
+docker update kibana <span class="nt">--restart</span><span class="o">=</span>always
+
+<span class="c"># 4. 测试</span>
+<span class="c"># 访问Kibana： http://虚拟机IP:5601/app/kibana</span>
+</code></pre></div></div> <h2 id="7-docker安装nginx">7. docker安装nginx</h2> <p>这种运行会出现问题, 因为需要先把配置文件复制出来才能正常run，所以直接按照第二种方案操作</p> <blockquote> <p>[Nginx in docker - <a href="https://forums.docker.com/t/nginx-in-docker-emerg-1-1-open-etc-nginx-nginx-conf-failed-2-no-such-file-or-directory/103325">emerg] 1#1: open() “/etc/nginx/nginx.conf” failed (2: No such file or directory)</a></p> </blockquote> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 1. 拉取镜像</span>
+docker pull nginx:1.10
+
+<span class="c"># 2. 创建容器</span>
+<span class="nb">mkdir</span> <span class="nt">-p</span> /home/slienceme/docker/nginx/html  <span class="c"># 创建多级文件夹</span>
+<span class="nb">mkdir</span> <span class="nt">-p</span> /home/slienceme/docker/nginx/logs
+<span class="nb">mkdir</span> <span class="nt">-p</span> /home/slienceme/docker/nginx/conf
+
+docker run <span class="nt">-p</span> 80:80 <span class="nt">--name</span> nginx <span class="se">\</span>
+ <span class="nt">-v</span> /home/slienceme/docker/nginx/html:/usr/share/nginx/html <span class="se">\</span>
+ <span class="nt">-v</span> /home/slienceme/docker/nginx/logs:/var/log/nginx <span class="se">\</span>
+ <span class="nt">-v</span> /home/slienceme/docker/nginx/conf:/etc/nginx <span class="se">\</span>
+ <span class="nt">-d</span> nginx:1.10
+
+docker run <span class="nt">--name</span> my-custom-nginx-container <span class="se">\</span>
+	<span class="nt">-v</span> /host/path/nginx.conf:/etc/nginx/nginx.conf:ro <span class="nt">-d</span> nginx
+
+<span class="c"># 3. 设置开机启动</span>
+docker update nginx <span class="nt">--restart</span><span class="o">=</span>always
+</code></pre></div></div> <p>教程其他操作：PS：感觉没啥用，还多出很多操作，我喜欢上面的操作</p> <blockquote> <p>唉，上面教程出问题了，报错，我试试第二种</p> <p>10min后~</p> <p>怪我太年轻，还得是第二种</p> </blockquote> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 另外也可以先不拉取镜像，直接run，docker发现没有会自动拉取</span>
+<span class="c"># 随便启动一个nginx实例，只是为了复制出配置</span>
+docker run <span class="nt">-p80</span>:80 <span class="nt">--name</span> nginx <span class="nt">-d</span> nginx:1.10   
+
+<span class="c"># 创建映射文件夹</span>
+<span class="nb">mkdir</span> <span class="nt">-p</span> /home/slienceme/docker/nginx/html
+<span class="nb">mkdir</span> <span class="nt">-p</span> /home/slienceme/docker/nginx/logs
+<span class="nb">mkdir</span> <span class="nt">-p</span> /home/slienceme/docker/nginx/conf
+
+<span class="c"># 将容器内的配置文件拷贝到/home/slienceme/docker/nginx/conf/ 下</span>
+docker container <span class="nb">cp </span>nginx:/etc/nginx/  /home/slienceme/docker/nginx/conf/ 
+
+<span class="c"># 这里复杂成功了，但是移动可能会出现权限问题nginx是root</span>
+<span class="c"># 递归修改文件及子目录和文件权限</span>
+<span class="nb">sudo chown</span> <span class="nt">-R</span> slienceme:slienceme /home/slienceme/docker/nginx/conf/nginx
+
+<span class="c">#由于拷贝完成后会在config中存在一个nginx文件夹，所以需要将它的内容移动到conf中</span>
+<span class="nb">mv</span> /home/slienceme/docker/nginx/conf/nginx/<span class="k">*</span> /home/slienceme/docker/nginx/conf/
+<span class="nb">rm</span> <span class="nt">-rf</span> /home/slienceme/docker/nginx/conf/nginx
+
+<span class="c"># 终止原容器</span>
+docker stop nginx
+
+<span class="c"># 执行命令删除原容器</span>
+docker <span class="nb">rm </span>nginx
+
+<span class="c"># 创建新的Nginx，执行以下命令</span>
+docker run <span class="nt">-p</span> 80:80 <span class="nt">--name</span> nginx <span class="se">\</span>
+ <span class="nt">-v</span> /mydata/nginx/html:/usr/share/nginx/html <span class="se">\</span>
+ <span class="nt">-v</span> /mydata/nginx/logs:/var/log/nginx <span class="se">\</span>
+ <span class="nt">-v</span> /mydata/nginx/conf/:/etc/nginx <span class="se">\</span>
+ <span class="nt">-d</span> nginx:1.10
+ 
+<span class="c"># 设置开机启动nginx</span>
+docker update nginx <span class="nt">--restart</span><span class="o">=</span>always
+
+<span class="c"># 创建“/mydata/nginx/html/index.html”文件，测试是否能够正常访问</span>
+<span class="nb">echo</span> <span class="s1">'&lt;h2&gt;hello nginx!&lt;/h2&gt;'</span> <span class="o">&gt;</span>index.html
+
+<span class="c"># 访问：http://ngix所在主机的IP:80/index.html</span>
+</code></pre></div></div> <div style="margin-top:2em;padding:0 1.5em;border:1px solid #d3d3d3;background-color:#deebf7"> <h3>文档信息</h3> <ul> <li>本文作者：<a href="https://blog.slienceme.cn" target="_blank">slience_me</a></li> <li>本文链接：<a href="https://blog.slienceme.cn/2025/02/22/Docker/" target="_blank">https://blog.slienceme.cn/2025/02/22/Docker/</a></li> <li>版权声明：自由转载-非商用-非衍生-保持署名（<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">创意共享3.0许可证</a>）</li> </ul> </div> </article> <div class="share"> <div class="share-component" data-disabled='qq,facebook'></div> </div> <div class="comment"> <script src="https://giscus.app/client.js" data-repo="slience-me/blog-comments" data-repo-id="R_kgDOKr27jA" data-category="Announcements" data-category-id="DIC_kwDOKr27jM4CnWMe" data-mapping="title" data-strict="1" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="zh-CN" data-loading="lazy" crossorigin="anonymous" async> </script> </div> </div> <div class="column one-fourth"> <h3>Search</h3> <div id="site_search"> <input style="width:96%" type="text" id="search_box" placeholder="Search"> </div> <ul id="search_results" style="font-size:14px;list-style-type:none;padding-top:10px;padding-left:10px;"></ul> <script src="https://blog.slienceme.cn/assets/js/simple-jekyll-search.min.js"></script> <script type="text/javascript"> SimpleJekyllSearch({ searchInput: document.getElementById('search_box'), resultsContainer: document.getElementById('search_results'), json: 'https://blog.slienceme.cn/assets/search_data.json?v=1740585855', searchResultTemplate: '<li><a href="{url}" title="{title}">{title}</a></li>', noResultsText: 'No results found', limit: 10, fuzzy: false, exclude: ['Welcome'] }) </script> <h3 class="post-directory-title mobile-hidden">Table of Contents</h3> <div id="post-directory-module" class="mobile-hidden"> <section class="post-directory"> <dl></dl> </section> </div> <script src="https://blog.slienceme.cn/assets/js/jquery.toc.js"></script> </div> </div> </section> <footer class="container"> <div class="site-footer" role="contentinfo"> <div class="copyright left mobile-block"> Copyright@ 2019-2025 slience_me 版权所有&emsp; <img src="/images/logo/logo.png" class="w-full" style="width: 12px;"> <a href="https://beian.mps.gov.cn/#/query/webSearch?code=13102202000626" rel="noreferrer" target="_blank">冀公网安备13102202000626</a>&emsp; <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank" rel="noreferrer">津ICP备2024026565号-1</a> <a href="javascript:window.scrollTo(0,0)" class="right mobile-visible">TOP</a> </div> <ul class="site-footer-links right mobile-hidden"> <li> <a href="javascript:window.scrollTo(0,0)" >TOP</a> </li> </ul> <br/> <script defer src="https://vercount.one/js"></script> <div class="mobile-hidden" style="margin-top:8px"> <span id="busuanzi_container_site_pv" style="display:none"> 本站访问量<span id="busuanzi_value_site_pv"></span>次 </span> <span id="busuanzi_container_site_uv" style="display:none"> / 本站访客数<span id="busuanzi_value_site_uv"></span>人 </span> <span id="busuanzi_container_page_pv" style="display:none"> / 本页访问量<span id="busuanzi_value_page_pv"></span>次 / 统计始于2024-12-01 </span> </div> </div> </footer> <div class="tools-wrapper"> <a class="gotop" href="#" title="回到顶部"><span class="octicon octicon-arrow-up"></span></a> </div> <script src="https://blog.slienceme.cn/assets/vendor/share.js/dist/js/share.min.js"></script> <script src="https://blog.slienceme.cn/assets/js/geopattern.js"></script> <script> jQuery(document).ready(function($) { $('.geopattern').each(function(){ $(this).geopattern($(this).data('pattern-id')); }); /* hljs.initHighlightingOnLoad(); */ }); </script> </body> </html>
