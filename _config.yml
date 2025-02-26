@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: https://slienceme.cn
+url: https://blog.slienceme.cn
 date_format: "ordinal"
 title: Slience_me的博客
 subtitle: "slience_me的博客"
@@ -169,9 +169,9 @@ beaudar:
 # giscus 配置参考：https://giscus.app/zh-CN
 giscus:
     repo: slience-me/blog-comments
-    repo-id: MDEwOlJlcG9zaXRvcnk5MzEyNzkxNw==
+    repo-id: R_kgDOKr27jA
     category: Announcements
-    category-id: DIC_kwDOBY0E7c4CRtg9
+    category-id: DIC_kwDOKr27jM4CnWMe
 # 在使用其它评论组件时可点击显示 Disqus
 lazy_load_disqus : false
 
