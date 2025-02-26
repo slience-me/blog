@@ -7,7 +7,7 @@
    <img src="https://komarev.com/ghpvc/?username=slience-me&label=Views&color=0e75b6&style=flat" alt="访问量统计" />
 </p>
 
-<p align="center"><img height='230' width='230' src="images/_640_640.png"/> </p>
+<p align="center"><img height='230' width='230' src="https://oss.slienceme.cn/2025/_640_640.png"/> </p>
 
 <p align="center">
   <picture>
