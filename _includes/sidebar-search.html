@@ -1,32 +1,38 @@
 
 <h3>Search</h3>
 <div id="site_search">
-    <input style="width:96%" type="text" id="search_box" placeholder="Search">
+    <div id="docsearch"></div>
+    <!--    <input style="width:96%" type="text" id="search_box" placeholder="Search">-->
 </div>
 
-<ul id="search_results" style="font-size:14px;list-style-type:none;padding-top:10px;padding-left:10px;"></ul>
+<!--<ul id="search_results" style="font-size:14px;list-style-type:none;padding-top:10px;padding-left:10px;"></ul>-->
 
-<script src="{{ assets_base_url }}/assets/js/simple-jekyll-search.min.js"></script>
-<script src=" https://cdn.jsdelivr.net/npm/@docsearch/js@3 "></script>
+<!--<script src="{{ assets_base_url }}/assets/js/simple-jekyll-search.min.js"></script>-->
+<script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
 <script type="text/javascript">
-docsearch({
-    appId: "8W5T6R2WWG",
-    apiKey: "e56e511c7c9f85e2c97e2817664aafb2",
-    indexName: "doc",
-    container: "#search_box",
-    debug: false });
-// SimpleJekyllSearch({
-//     searchInput: document.getElementById('search_box'),
-//     resultsContainer: document.getElementById('search_results'),
-//   {% if site.cdn.jsdelivr.enabled and site.url contains 'mazhuang.org' %}
-//     json: 'https://fastly.jsdelivr.net/gh/mzlogin/mzlogin.github.io@built/assets/search_data.json?v={{ "now" | date: "%s"}}',
-//   {% else %}
-//     json: '{{ site.url }}/assets/search_data.json?v={{ "now" | date: "%s"}}',
-//   {% endif %}
-//     searchResultTemplate: '<li><a href="{url}" title="{title}">{title}</a></li>',
-//     noResultsText: 'No results found',
-//     limit: {{ site.simple_jekyll_search.limit }},
-//     fuzzy: false,
-//     exclude: ['Welcome']
-// })
+    import docsearch from '@docsearch/js';
+    docsearch({
+        appId: "8W5T6R2WWG",
+        apiKey: "e56e511c7c9f85e2c97e2817664aafb2",
+        indexName: "doc",
+        container: "#docsearch",
+        debug: false
+    });
 </script>
+<!--
+SimpleJekyllSearch({
+    searchInput: document.getElementById('search_box'),
+    resultsContainer: document.getElementById('search_results'),
+  {% if site.cdn.jsdelivr.enabled and site.url contains 'mazhuang.org' %}
+    json: 'https://fastly.jsdelivr.net/gh/mzlogin/mzlogin.github.io@built/assets/search_data.json?v={{ "now" | date: "%s"}}',
+  {% else %}
+    json: '{{ site.url }}/assets/search_data.json?v={{ "now" | date: "%s"}}',
+  {% endif %}
+    searchResultTemplate: '<li><a href="{url}" title="{title}">{title}</a></li>',
+    noResultsText: 'No results found',
+    limit: {{ site.simple_jekyll_search.limit }},
+    fuzzy: false,
+    exclude: ['Welcome']
+})
+-->
+
