@@ -4,7 +4,7 @@
 <a title="github" target="_blank" href="https://github.com/slience-me"><img src="https://img.shields.io/badge/dynamic/json?label=GitHub&suffix=%20followers&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dgithub%26queryKey%3Dslience-me&labelColor=282c34&color=353940&logo=github&longCache=true" ></a>
   <a href="https://slienceme.cn/"><img src="https://img.shields.io/badge/Website-博客-blue" /></a>
    <a href="https://blog.csdn.net/slience_me/"><img src="https://img.shields.io/badge/CSDN-论坛-c32136" /></a>
-   <img src="https://komarev.com/ghpvc/?username=slience-me&label=Views&color=0e75b6&style=flat" alt="访问量统计" />
+   <img src="https://camo.githubusercontent.com/d65aec3319afd84641cff31acad7f0fb9329d1001f5aefd4bd1821a7690afb6e/68747470733a2f2f6b6f6d617265762e636f6d2f67687076632f3f757365726e616d653d736c69656e63652d6d65266c6162656c3d566965777326636f6c6f723d306537356236267374796c653d666c6174" alt="访问量统计" />
 </p>
 
 <p align="center"><img height='230' width='230' src="https://oss.slienceme.cn/2025/_640_640.png"/> </p>
