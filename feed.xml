@@ -1,4 +1,288 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://blog.slienceme.cn/pages/slience-me/slienceme.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.slienceme.cn/pages/slience-me/slienceme.github.io/" rel="alternate" type="text/html" /><updated>2025-03-01T22:11:45+08:00</updated><id>https://blog.slienceme.cn/pages/slience-me/slienceme.github.io/feed.xml</id><title type="html">Slience_me的博客</title><subtitle>slience_me的个人博客</subtitle><author><name>slience_me</name></author><entry><title type="html">服务器｜ElasticSearch</title><link href="https://blog.slienceme.cn/pages/slience-me/slienceme.github.io/2025/02/23/ElasticSearch/" rel="alternate" type="text/html" title="服务器｜ElasticSearch" /><published>2025-02-23T00:00:00+08:00</published><updated>2025-02-23T00:00:00+08:00</updated><id>https://blog.slienceme.cn/pages/slience-me/slienceme.github.io/2025/02/23/ElasticSearch</id><content type="html" xml:base="https://blog.slienceme.cn/pages/slience-me/slienceme.github.io/2025/02/23/ElasticSearch/"><![CDATA[<p><img src="/images/posts/logo_slienceme3.png" alt="img" /></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://blog.slienceme.cn/pages/slience-me/slienceme.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.slienceme.cn/pages/slience-me/slienceme.github.io/" rel="alternate" type="text/html" /><updated>2025-03-17T22:17:26+08:00</updated><id>https://blog.slienceme.cn/pages/slience-me/slienceme.github.io/feed.xml</id><title type="html">Slience_me的博客</title><subtitle>slience_me的个人博客</subtitle><author><name>slience_me</name></author><entry><title type="html">服务器｜基于VMware的虚拟机集群搭建</title><link href="https://blog.slienceme.cn/pages/slience-me/slienceme.github.io/2025/03/17/VMware%E9%9B%86%E7%BE%A4/" rel="alternate" type="text/html" title="服务器｜基于VMware的虚拟机集群搭建" /><published>2025-03-17T00:00:00+08:00</published><updated>2025-03-17T00:00:00+08:00</updated><id>https://blog.slienceme.cn/pages/slience-me/slienceme.github.io/2025/03/17/VMware%E9%9B%86%E7%BE%A4</id><content type="html" xml:base="https://blog.slienceme.cn/pages/slience-me/slienceme.github.io/2025/03/17/VMware%E9%9B%86%E7%BE%A4/"><![CDATA[<p><img src="/images/posts/logo_slienceme3.png" alt="img" /></p>
+
+<p>本文作者： <a href="https://slienceme.cn/">slience_me</a></p>
+
+<h1 id="基于vmware的虚拟机集群搭建">基于VMware的虚拟机集群搭建</h1>
+
+<blockquote>
+  <p>该集群采用镜像<code class="language-plaintext highlighter-rouge">ubuntu-20.04.6-live-server-amd64</code>构建集群</p>
+
+  <p>我使用的虚拟机版本为<code class="language-plaintext highlighter-rouge">VMware Workstation Pro 17</code></p>
+</blockquote>
+
+<h2 id="1-安装vmware">1. 安装Vmware</h2>
+
+<p>这个教程居多，网上搜索即可</p>
+
+<h2 id="2-构建虚拟机">2. 构建虚拟机</h2>
+
+<p><strong>新建虚拟机</strong></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317160428945.png" alt="image-20250317160428945" /></p>
+
+<p><strong>选择典型后，下一步</strong></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317160532322.png" alt="image-20250317160532322" /></p>
+
+<p><strong>选择稍后安装操作系统，下一步，后面非重要部分，不再语言提示</strong></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317160716026.png" alt="image-20250317160716026" /></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317160824417.png" alt="image-20250317160824417" /></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317160955742.png" alt="image-20250317160955742" /></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317161141504.png" alt="image-20250317161141504" /></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317161210598.png" alt="image-20250317161210598" /></p>
+
+<h2 id="3-安装linux">3. 安装Linux</h2>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317161553374.png" alt="image-20250317161553374" /></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317161729665.png" alt="image-20250317161729665" /></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317161840826.png" alt="image-20250317161840826" /></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317162032527.png" alt="image-20250317162032527" /></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317162053545.png" alt="image-20250317162053545" /></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317162114568.png" alt="image-20250317162114568" /></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317162219485.png" alt="image-20250317162219485" /></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317162239059.png" alt="image-20250317162239059" /></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317162323147.png" alt="image-20250317162323147" /></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317162409725.png" alt="image-20250317162409725" /></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317162419917.png" alt="image-20250317162419917" /></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317162431064.png" alt="image-20250317162431064" /></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317162505727.png" alt="image-20250317162505727" /></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317162556846.png" alt="image-20250317162556846" /></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317162631973.png" alt="image-20250317162631973" /></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317162645237.png" alt="image-20250317162645237" /></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317162922477.png" alt="image-20250317162922477" /></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317163505309.png" alt="image-20250317163505309" /></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317163635130.png" alt="image-20250317163635130" /></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317163726429.png" alt="image-20250317163726429" /></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317163746924.png" alt="image-20250317163746924" /></p>
+
+<p><strong>下面就是漫长的等待</strong></p>
+
+<p><strong>安装成功</strong></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317164138254.png" alt="image-20250317164138254" /></p>
+
+<p><strong>输入你的账户密码启动</strong></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317164155988.png" alt="image-20250317164155988" /></p>
+
+<h2 id="4-网络配置">4. 网络配置</h2>
+
+<p>需要共享电脑的网络给虚拟机，</p>
+
+<p>打开控制面板 <code class="language-plaintext highlighter-rouge">win + R</code>，输入<code class="language-plaintext highlighter-rouge">control</code></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317164817683.png" alt="image-20250317164817683" /></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317164848875.png" alt="image-20250317164848875" /></p>
+
+<p><strong>在这里需要注意，你使用的是Wifi还是网线，找到对应的网络适配器，以Wifi为例</strong></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317165017431.png" alt="image-20250317165017431" /></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317165123548.png" alt="image-20250317165123548" /></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317165146310.png" alt="image-20250317165146310" /></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317165215225.png" alt="image-20250317165215225" /></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317165230257.png" alt="image-20250317165230257" /></p>
+
+<p><strong>回到VMware，设置虚拟网络编辑器</strong></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317165331789.png" alt="image-20250317165331789" /></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317165428664.png" alt="image-20250317165428664" /></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317165535238.png" alt="image-20250317165535238" /></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317165553382.png" alt="image-20250317165553382" /></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317165621828.png" alt="image-20250317165621828" /></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317165738507.png" alt="image-20250317165738507" /></p>
+
+<p><strong>尝试</strong><code class="language-plaintext highlighter-rouge">ping www.baidu.com</code></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317165844337.png" alt="image-20250317165844337" /></p>
+
+<p>然后关机 <code class="language-plaintext highlighter-rouge">shutdown now</code></p>
+
+<h2 id="5-开始克隆">5. 开始克隆</h2>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317170027056.png" alt="image-20250317170027056" /></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317170044085.png" alt="image-20250317170044085" /></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317170057490.png" alt="image-20250317170057490" /></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317170115555.png" alt="image-20250317170115555" /></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317170158182.png" alt="image-20250317170158182" /></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317170218280.png" alt="image-20250317170218280" /></p>
+
+<p><strong>根据实际情况 选择克隆的个数</strong></p>
+
+<p><strong>克隆完成</strong></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317170353501.png" alt="image-20250317170353501" /></p>
+
+<p><strong>开机前需要修改一下MAC地址</strong></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317182900331.png" alt="image-20250317182900331" /></p>
+
+<p><strong>生成新的MAC地址</strong></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317182913703.png" alt="image-20250317182913703" /></p>
+
+<h2 id="6-初始化系统">6. 初始化系统</h2>
+
+<p>启动全部的虚拟机，启动过程比较卡顿，需要等待</p>
+
+<h3 id="61-开放root账户">6.1 开放root账户</h3>
+
+<p>进入系统后，输入用户名密码</p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317170848184.png" alt="image-20250317170848184" /></p>
+
+<p>需要打开root用户权限</p>
+
+<p>输入指令<code class="language-plaintext highlighter-rouge">sudo -i</code> ，启用root用户，输入你的密码</p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317171104618.png" alt="image-20250317171104618" /></p>
+
+<p>然后输入指令<code class="language-plaintext highlighter-rouge">passwd</code>，修改root密码</p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317171301917.png" alt="image-20250317171301917" /></p>
+
+<p>每台设备都是相同的操作</p>
+
+<h3 id="62-ssh服务">6.2 SSH服务</h3>
+
+<p>首先判断一下，系统的sshd是否安装成功</p>
+
+<p>执行指令 <code class="language-plaintext highlighter-rouge">systemctl status sshd</code>， 这样就算成功了</p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317180954200.png" alt="image-20250317180954200" /></p>
+
+<h3 id="63-设置静态ip">6.3 设置静态IP</h3>
+
+<p>修改配置文件，每个电脑版本可能不同，但是路径相同，以我的为例：</p>
+
+<p>可以先备份一下旧的 <code class="language-plaintext highlighter-rouge">cp /etc/netplan/00-installer.yaml /etc/netplan/00-installer.yaml-before</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">vim /etc/netplan/00-installer-config.yaml</code></p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">network</span><span class="pi">:</span>
+  <span class="na">ethernets</span><span class="pi">:</span>
+    <span class="na">ens33</span><span class="pi">:</span>
+      <span class="na">addresses</span><span class="pi">:</span> <span class="pi">[</span><span class="nv">192.168.137.130/24</span><span class="pi">]</span>
+      <span class="na">gateway4</span><span class="pi">:</span> <span class="s">192.168.137.2</span>
+      <span class="na">dhcp4</span><span class="pi">:</span> <span class="no">false</span>
+      <span class="na">nameservers</span><span class="pi">:</span>
+        <span class="na">addresses</span><span class="pi">:</span> <span class="pi">[</span><span class="nv">114.114.114.114</span><span class="pi">,</span> <span class="nv">8.8.8.8</span><span class="pi">]</span>
+  <span class="na">version</span><span class="pi">:</span> <span class="m">2</span>
+</code></pre></div></div>
+
+<p>应用配置：<code class="language-plaintext highlighter-rouge">netplan apply</code></p>
+
+<p>查看是否配置成功：<code class="language-plaintext highlighter-rouge">ip addr</code></p>
+
+<p>为了更好的控制服务器，我使用远程连接的方式，去管理</p>
+
+<p>我使用的软件是</p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317172106992.png" alt="image-20250317172106992" /></p>
+
+<h3 id="64-镜像源-host-主机名">6.4 镜像源 host 主机名</h3>
+
+<p>远程连接后：</p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317185927828.png" alt="image-20250317185927828" /></p>
+
+<p>我将使用MobaXterm的多重执行功能：</p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317190003104.png" alt="image-20250317190003104" /></p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317190040051.png" alt="image-20250317190040051" /></p>
+
+<p><strong>镜像源</strong></p>
+
+<p>国内的话，最好换一个系统镜像源，使用<a href="https://developer.aliyun.com/mirror/">阿里的开源镜像源</a>也行，进入后选择对应的系统，<a href="https://developer.aliyun.com/mirror/ubuntu">Ubuntu的镜像源</a></p>
+
+<p>注意root权限，否则需要加sudo</p>
+
+<p>修改源文件名称 <code class="language-plaintext highlighter-rouge">cp/etc/apt/sources.list /etc/apt/sources.list.old</code></p>
+
+<p>新创建文件<code class="language-plaintext highlighter-rouge">vim /etc/apt/sources.list</code>，将对应的内容复制进去即可(注意需要对应版本)</p>
+
+<p>例如我的是：</p>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317181554705.png" alt="image-20250317181554705" /></p>
+
+<p>可以顺手更新一下软件<code class="language-plaintext highlighter-rouge">apt update</code></p>
+
+<p><strong>主机名</strong></p>
+
+<p>修改主机名称，<code class="language-plaintext highlighter-rouge">hostnamectl set-hostname 新主机名</code></p>
+
+<p>例如：</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">hostnamectl set-hostname k8s-node1</code></li>
+  <li><code class="language-plaintext highlighter-rouge">hostnamectl set-hostname k8s-node2</code></li>
+  <li><code class="language-plaintext highlighter-rouge">hostnamectl set-hostname k8s-node3</code></li>
+</ul>
+
+<p>控制台输入 <code class="language-plaintext highlighter-rouge">/bin/bash</code>，刷新一下名称 <code class="language-plaintext highlighter-rouge">root@原来的 -&gt; root@新的</code></p>
+
+<p><strong>host</strong></p>
+
+<p>修改host <code class="language-plaintext highlighter-rouge">vim /etc/hosts</code>, 修改<code class="language-plaintext highlighter-rouge">127.0.1.1</code>的后面为对应的名称</p>
+
+<p>另外最后面需要加上</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>192.168.137.130 k8s-node1
+192.168.137.131 k8s-node2
+192.168.137.132 k8s-node3
+</code></pre></div></div>
+
+<p>修改后，可以尝试ping一下，是否修改成功</p>
+
+<blockquote>
+  <p>这些都完成后，需要拍摄一个快照，方便出现问题恢复到这个位置</p>
+</blockquote>
+
+<p><img src="/images/posts/vmware-cluster/image-20250317191918336.png" alt="image-20250317191918336" /></p>
+
+<p>等待完成后，集群的初始化任务就完成了u</p>
+
+<p>后边的内容写在中间件 kubernates 部分</p>]]></content><author><name>slience_me</name></author><category term="服务器" /><category term="Linux" /><category term="VMware" /><category term="集群" /><summary type="html"><![CDATA[基于VMware的虚拟机集群搭建]]></summary></entry><entry><title type="html">服务器｜ElasticSearch</title><link href="https://blog.slienceme.cn/pages/slience-me/slienceme.github.io/2025/02/23/ElasticSearch/" rel="alternate" type="text/html" title="服务器｜ElasticSearch" /><published>2025-02-23T00:00:00+08:00</published><updated>2025-02-23T00:00:00+08:00</updated><id>https://blog.slienceme.cn/pages/slience-me/slienceme.github.io/2025/02/23/ElasticSearch</id><content type="html" xml:base="https://blog.slienceme.cn/pages/slience-me/slienceme.github.io/2025/02/23/ElasticSearch/"><![CDATA[<p><img src="/images/posts/logo_slienceme3.png" alt="img" /></p>
 
 <p>本文作者： <a href="https://slienceme.cn/">slience_me</a></p>
 
@@ -6722,41 +7006,4 @@ nvcc <span class="nt">--version</span>
 
 <h2 id="8-结论-conclusion">8 结论 Conclusion</h2>
 
-<p>作者团队提供了一份关于时间序列Transformer的调查报告。将审查的方法组织成一个新的分类体系，包括网络设计和应用。并总结了每个类别中的代表性方法，通过实验评估讨论它们的优点和局限性，并突出未来的研究方向。</p>]]></content><author><name>slience_me</name></author><category term="论文笔记" /><summary type="html"><![CDATA[Transformers in Time Series A Survey综述总结]]></summary></entry><entry><title type="html">论文笔记｜encoding和embedding的区别</title><link href="https://blog.slienceme.cn/pages/slience-me/slienceme.github.io/2024/03/12/encoding%E5%92%8Cembedding%E7%9A%84%E5%8C%BA%E5%88%AB/" rel="alternate" type="text/html" title="论文笔记｜encoding和embedding的区别" /><published>2024-03-12T00:00:00+08:00</published><updated>2024-03-12T00:00:00+08:00</updated><id>https://blog.slienceme.cn/pages/slience-me/slienceme.github.io/2024/03/12/encoding%E5%92%8Cembedding%E7%9A%84%E5%8C%BA%E5%88%AB</id><content type="html" xml:base="https://blog.slienceme.cn/pages/slience-me/slienceme.github.io/2024/03/12/encoding%E5%92%8Cembedding%E7%9A%84%E5%8C%BA%E5%88%AB/"><![CDATA[<p><img src="/images/posts/logo_slienceme3.png" alt="在这里插入图片描述" /></p>
-
-<p>本文作者： <a href="https://slienceme.cn/">slience_me</a></p>
-
-<hr />
-<h1 id="encoding和embedding的区别">encoding和embedding的区别</h1>
-
-<p>“Embedding” 和 “Encoding” 是两个在计算机科学和机器学习领域中常用的术语，它们虽然有些相似，但指代的概念和用途有所不同。</p>
-
-<p>## Embedding</p>
-<ul>
-  <li>在自然语言处理（NLP）和图像处理等领域中， <strong>Embedding 通常指将高维度的数据映射到低维度的空间中</strong> 。例如，在NLP中，词嵌入（Word Embedding）是将单词映射到低维度的实数向量空间中的技术，其中每个单词都被表示为一个稠密的实数向量。这样的向量表示捕捉了单词之间的语义关系，常用的词嵌入模型包括Word2Vec、GloVe和BERT。</li>
-  <li>在图像处理中，图像嵌入（Image Embedding）类似于将图像编码为向量形式的表示，使得计算机能够更好地理解图像的内容。通常使用深度学习模型（如卷积神经网络）来学习图像的嵌入。</li>
-</ul>
-
-<blockquote>
-  <p>采用Word Embedding，假设我们有一个句子：“猫坐在地毯上”。在词嵌入中，每个单词（如“猫”、“坐”、“地毯”等）都被映射为一个实数向量，以便计算机能够更好地理解这些单词之间的语义关系。 我们可以使用预训练的词嵌入模型（如Word2Vec或GloVe），将每个单词映射为一个低维度的实数向量。例如，“猫”可能被映射为[-0.5, 0.8, -0.3]，“坐”可能被映射为[0.2, -0.6, 0.9]，以此类推。
-词嵌入（Word Embedding）主要关注于将单词映射到连续的实数向量空间中，以捕捉单词之间的语义关系。</p>
-</blockquote>
-
-<h2 id="encoding">Encoding</h2>
-<ul>
-  <li>
-    <p>编码是将数据转换为特定格式或形式的过程。 <strong>编码可以是将原始数据转换为适合存储或传输的形式，也可以是将数据转换为表示的形式，以便进一步处理。</strong> 在计算机编程中，编码通常指将数据转换为比特流的过程，比如将字符转换为ASCII码或UTF-8编码。</p>
-  </li>
-  <li>
-    <p>在机器学习领域中，编码也可以指将输入数据转换为机器学习模型可以处理的格式的过程。例如，将分类变量转换为数字形式的过程称为编码（如独热编码）。</p>
-  </li>
-</ul>
-
-<blockquote>
-  <p>采用One-Hot Encoding，例如，对于句子“猫坐在地毯上”，如果我们有一个词汇表包含[“猫”, “坐”, “地毯”, “上”]，那么“猫”可能被编码为[1, 0, 0, 0]，“坐”可能被编码为[0, 1, 0, 0]，以此类推。
-One-Hot Encoding 则是将单词编码为稀疏的二进制向量，以便计算机能够处理。</p>
-</blockquote>
-
-<h2 id="总结">总结</h2>
-
-<p>总的来说，Embedding 更多地关注于将数据映射到低维度空间以捕捉其语义信息，而 Encoding 则更多地关注于将数据转换为特定格式或表示的过程。在某些情况下，两者的概念可能会有所重叠，但它们通常在不同的上下文中使用。</p>]]></content><author><name>slience_me</name></author><category term="论文笔记" /><summary type="html"><![CDATA[encoding和embedding的区别]]></summary></entry></feed>
+<p>作者团队提供了一份关于时间序列Transformer的调查报告。将审查的方法组织成一个新的分类体系，包括网络设计和应用。并总结了每个类别中的代表性方法，通过实验评估讨论它们的优点和局限性，并突出未来的研究方向。</p>]]></content><author><name>slience_me</name></author><category term="论文笔记" /><summary type="html"><![CDATA[Transformers in Time Series A Survey综述总结]]></summary></entry></feed>

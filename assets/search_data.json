@@ -124,6 +124,8 @@
   
   
   
+  
+  
 
   
     {
@@ -1484,6 +1486,14 @@
       
       "url"      : "https://blog.slienceme.cn/2025/02/23/ElasticSearch/",
       "keywords" : "服务器, Linux, ElasticSearch"
+    } ,
+  
+    {
+      "title"    : "服务器｜基于VMware的虚拟机集群搭建",
+      "category" : "服务器",
+      
+      "url"      : "https://blog.slienceme.cn/2025/03/17/VMware%E9%9B%86%E7%BE%A4/",
+      "keywords" : "服务器, Linux, VMware, 集群"
     } ,
   
     {
